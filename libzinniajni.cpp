@@ -127,7 +127,7 @@ JNIEXPORT jint JNICALL Java_org_xdump_android_zinnia_Zinnia_zinnia_1character_1a
 (JNIEnv *env, jobject jobj, jlong character, jlong id, jint x, jint y)
 {
     zinnia_character_t* p = reinterpret_cast<zinnia_character_t*>(character);
-    zinnia_character_add(p, id, x, y);
+    return zinnia_character_add(p, id, x, y);
 }
 
 /*
@@ -186,6 +186,8 @@ JNIEXPORT jint JNICALL Java_org_xdump_android_zinnia_Zinnia_zinnia_1character_1y
 JNIEXPORT jint JNICALL Java_org_xdump_android_zinnia_Zinnia_zinnia_1character_1parse
   (JNIEnv *env, jobject jobj, jlong, jstring jstr)
 {
+    /* TODO */
+    return 0;
 }
 
 /*
@@ -316,6 +318,8 @@ JNIEXPORT jint JNICALL Java_org_xdump_android_zinnia_Zinnia_zinnia_1recognizer_1
 JNIEXPORT jint JNICALL Java_org_xdump_android_zinnia_Zinnia_zinnia_1recognizer_1open_1from_1ptr
 (JNIEnv *env, jobject jobj, jlong, jstring jstr, jlong jlongv)
 {
+    /* TODO */
+    return 0;
 }
 
 /*
@@ -464,6 +468,8 @@ JNIEXPORT jstring JNICALL Java_org_xdump_android_zinnia_Zinnia_zinnia_1trainer_1
 JNIEXPORT jint JNICALL Java_org_xdump_android_zinnia_Zinnia_zinnia_1trainer_1convert_1model
   (JNIEnv *env, jobject jobj, jstring txt_model, jstring binary_mode, jdouble compression_threshold)
 {
+    /* TODO */
+    return 0;
 }
 
 /*
@@ -474,5 +480,7 @@ JNIEXPORT jint JNICALL Java_org_xdump_android_zinnia_Zinnia_zinnia_1trainer_1con
 JNIEXPORT jint JNICALL Java_org_xdump_android_zinnia_Zinnia_zinnia_1trainer_1make_1header
 (JNIEnv *env, jobject jobj, jstring txt_model, jstring header_file, jstring name, jdouble compression_threashold)
 {
+    /* TODO */
+    return 0;
 }
 
